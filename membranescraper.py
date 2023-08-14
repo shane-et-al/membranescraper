@@ -50,7 +50,7 @@ with open("urls.txt") as urls:
                 continue
             else:
                 # append entry only if it's complete (has date, membrane, text)
-                if date != None and membrane != None and len(text)>0:
+                if date != None and membrane != None and len(text.strip())>0:
                     entries.append({"roll":roll, "membrane":membrane, "date":date, "text":text})
                 text = ""
                 if isDateLine(line):
@@ -58,6 +58,7 @@ with open("urls.txt") as urls:
                 elif isMembraneLine(line, membranes):
                     membrane = line.strip()
         entries.append({"roll":roll, "membrane":membrane, "date":date, "text":text})
+        break
 
     with open('rolls.csv', 'w') as csvfile:
         writer = csv.DictWriter(csvfile, fieldnames=entries[0].keys())
