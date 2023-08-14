@@ -38,12 +38,12 @@ with open("urls.txt") as urls:
         # Grab all the headers inside, which are membrane labels
         for h3 in h3s:
             membranes.append(h3.text)
-        roll = t.splitlines()[1]
+        roll = soup.find_all("h1",class_="page-header")[0].text
         membrane = None
         date = None
         text = ""
 
-        for line in t.splitlines()[4:]:
+        for line in t.splitlines()[1:]:
             # Is the line not a date or a membrane (i.e. is text)
             if not isDateLine(line) and not isMembraneLine(line,membranes):
                 text = text+" "+line
