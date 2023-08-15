@@ -6,7 +6,9 @@ name = "pypi"
 [packages]
 requests = "*"
 beautifulsoup4 = "*"
-parsedatetime = "*"
+pip = "*"
+install = "*"
+python-dateutil = "*"
 
 [dev-packages]
 

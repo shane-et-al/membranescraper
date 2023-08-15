@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "be26cf11619bb9b3c278d385ca4530c45213b4d5a791778fd6b52a22c802fc96"
+            "sha256": "6c11b16eb5c5d81779404580d8924f0e175eedcbef212d5c8cf778a2139e44e9"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -121,13 +121,29 @@
             "markers": "python_version >= '3.5'",
             "version": "==3.4"
         },
-        "parsedatetime": {
+        "install": {
             "hashes": [
-                "sha256:4cb368fbb18a0b7231f4d76119165451c8d2e35951455dfee97c62a87b04d455",
-                "sha256:cb96edd7016872f58479e35879294258c71437195760746faffedb692aef000b"
+                "sha256:0d3fadf4aa62c95efe8d34757c8507eb46177f86c016c21c6551eafc6a53d5a9",
+                "sha256:e67c8a0be5ccf8cb4ffa17d090f3a61b6e820e6a7e21cd1d2c0f7bc59b18e647"
             ],
             "index": "pypi",
-            "version": "==2.6"
+            "version": "==1.3.5"
+        },
+        "pip": {
+            "hashes": [
+                "sha256:7ccf472345f20d35bdc9d1841ff5f313260c2c33fe417f48c30ac46cccabf5be",
+                "sha256:fb0bd5435b3200c602b5bf61d2d43c2f13c02e29c1707567ae7fbc514eb9faf2"
+            ],
+            "index": "pypi",
+            "version": "==23.2.1"
+        },
+        "python-dateutil": {
+            "hashes": [
+                "sha256:0123cacc1627ae19ddf3c27a5de5bd67ee4586fbdd6440d9748f8abb483d3e86",
+                "sha256:961d03dc3453ebbc59dbdea9e4e11c5651520a876d0f4db161e8674aae935da9"
+            ],
+            "index": "pypi",
+            "version": "==2.8.2"
         },
         "requests": {
             "hashes": [
@@ -136,6 +152,14 @@
             ],
             "index": "pypi",
             "version": "==2.31.0"
+        },
+        "six": {
+            "hashes": [
+                "sha256:1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926",
+                "sha256:8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254"
+            ],
+            "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'",
+            "version": "==1.16.0"
         },
         "soupsieve": {
             "hashes": [
