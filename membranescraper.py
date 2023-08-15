@@ -24,8 +24,8 @@ def isDateLine(line, dates):
 def parseDate(line):
     if line.strip().upper() == "NO DATE":
         return "No date"
-    if parser.parse(line).year < 1200 or parser.parse(line).year > 1500:
-        print(parser.parse(line).strftime("%Y/%m/%d"))
+    # if parser.parse(line).year < 1200 or parser.parse(line).year > 1500:
+    #     print(parser.parse(line).strftime("%Y/%m/%d"))
     return parser.parse(line).strftime("%Y/%m/%d")
 
 # Open the list of URLs
@@ -56,7 +56,6 @@ with open("urls.txt") as urls:
             # Is the line not a date or a membrane (i.e. is text)
             if not isDateLine(line, dates) and not isMembraneLine(line,membranes):
                 text = text+" "+line.strip()
-                print(line.strip())
                 continue
             else:
                 # append entry only if it's complete (has date, membrane, text)
